@@ -1,0 +1,14 @@
+{
+  "name": "claude-handoff",
+  "description": "Session continuity for Claude Code — the handoff plugin's home marketplace.",
+  "owner": {
+    "name": "phil9922"
+  },
+  "plugins": [
+    {
+      "name": "handoff",
+      "source": "./",
+      "description": "Session continuity: a dated log of completed work and a prioritized, estimated checklist per project, with a recap and what-next picker on session start."
+    }
+  ]
+}
