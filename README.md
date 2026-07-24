@@ -212,8 +212,9 @@ end-to-end against a throwaway project.
 
 ## Support
 
-Free and MIT-licensed. If it saves you time, [a coffee is appreciated](https://ko-fi.com/phil9922) —
-but never required, and the tool will never nag you about it.
+Free and MIT-licensed. If it saves you time, [a coffee](https://ko-fi.com/phil9922) or a
+[sponsorship](https://github.com/sponsors/phil9922) is appreciated — but never required, and the
+tool will never nag you about it.
 
 ## License
 
