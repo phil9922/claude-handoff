@@ -1,7 +1,7 @@
 {
   "name": "handoff",
   "displayName": "Claude Code Handoff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Session continuity: every project gets a dated log of completed work and a prioritized, estimated checklist, with a recap and what-next picker on session start.",
   "author": {
     "name": "phil9922",
@@ -10,6 +10,5 @@
   "homepage": "https://github.com/phil9922/claude-handoff",
   "repository": "https://github.com/phil9922/claude-handoff",
   "license": "MIT",
-  "keywords": ["handoff", "session-continuity", "checklist", "log", "memory"],
-  "hooks": "./hooks/hooks.json"
+  "keywords": ["handoff", "session-continuity", "checklist", "log", "memory"]
 }
