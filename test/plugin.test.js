@@ -18,7 +18,9 @@ module.exports = ({ test, tmpdir, runHook, ROOT }) => {
     assert.strictEqual(plugin.name, 'handoff', 'the name is the command namespace — changing it breaks /handoff:*');
     assert.ok(/^[a-z0-9-]+$/.test(plugin.name), 'kebab-case, no spaces');
     assert.ok(plugin.version, 'users only receive updates when this is bumped');
-    assert.ok(fs.existsSync(path.join(ROOT, plugin.hooks)), `hooks manifest missing: ${plugin.hooks}`);
+    assert.strictEqual(plugin.hooks, undefined,
+      'hooks/hooks.json is auto-loaded from its standard path; an explicit hooks key trips duplicate-detection and the whole plugin is rejected (broke v1.0.0)');
+    assert.ok(fs.existsSync(path.join(ROOT, 'hooks', 'hooks.json')), 'hooks/hooks.json must exist at the standard path');
   });
 
   test('marketplace.json serves this repo as its own marketplace', () => {
